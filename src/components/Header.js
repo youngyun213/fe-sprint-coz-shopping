@@ -45,9 +45,11 @@ function Header() {
             <img id="logo" className="mouse_hover" src="../logo.png" alt="logo" />
           </span>
         </Link>
-        <Link to="/">
-          <h1 className="mouse_hover">COZ Shopping</h1>
-        </Link>
+        <h1 className="mouse_hover">
+          <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
+            COZ Shopping
+          </Link>
+        </h1>
       </Title>
       <span>
         <img id="ham_icon" className="mouse_hover" src="../icon.png" alt="햄버거 버튼" />

@@ -70,7 +70,7 @@ function Dropdown() {
           </Link>
         </li>
         <li>
-          <Link to="/bookmark" style={{ color: "inherit", textDecoration: "inherit" }}>
+          <Link to="/bookmarklist" style={{ color: "inherit", textDecoration: "inherit" }}>
             <img src="../bookmark_icon.png" />
             북마크 페이지
           </Link>

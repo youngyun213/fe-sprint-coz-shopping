@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Dropdown from "./Dropdown";
 
 const Header_body = styled.header`
   position: sticky;
@@ -37,6 +39,8 @@ const Title = styled.div`
 `;
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Header_body>
       <Title>
@@ -51,9 +55,18 @@ function Header() {
           </Link>
         </h1>
       </Title>
-      <span>
-        <img id="ham_icon" className="mouse_hover" src="../icon.png" alt="햄버거 버튼" />
-      </span>
+      <div>
+        <img
+          id="ham_icon"
+          className="mouse_hover"
+          src="../icon.png"
+          alt="햄버거 버튼"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        />
+        {isOpen ? <Dropdown /> : null}
+      </div>
     </Header_body>
   );
 }

@@ -8,7 +8,7 @@ const Footer_body = styled.footer`
   justify-content: center;
   align-items: center;
 
-  height: 58px;
+  height: 60px;
   background: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 `;
